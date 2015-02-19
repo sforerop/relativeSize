@@ -31,8 +31,21 @@ public class Main extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        PrintWriter pagina=resp.getWriter();
+         PrintWriter pagina=resp.getWriter();
         resp.setContentType("text/html");
+        String valor = req.getParameter("elementos");        
+        App app = new App();        
+        App.llenarDatos(valor);
+        PrintWriter out = resp.getWriter();
+        out.print("AVG =" + App.getAvg()+ "\n");
+        out.print("VAR2 =" + App.getVar2()+ "\n");
+        out.print("VAR =" + App.getVar()+ "\n");
+        out.print("VS =" + App.getVs()+ "\n");
+        out.print("S =" + App.getS()+ "\n");
+        out.print("M =" + App.getM()+ "\n");
+        out.print("L =" + App.getL()+ "\n");
+        out.print("VL =" + App.getVl()+ "\n");
+        
     }
     
     @Override
