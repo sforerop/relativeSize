@@ -58,7 +58,7 @@ public class Main extends HttpServlet {
         out.print("<html>\n"
                 + "<body>\n"
                 + "<form action=\"/Main\" method=\"POST\">\n"
-                +"Ingrese loas datos X,Y separados por comas y separe las duplas con -> \nEjemplo: 0,1->2,5->3,6\n"
+                +"Ingrese los datos separados por comas \nEjemplo: 1.2,2,3,15,6,18,5\n"
                 + "<br/>\n"
                 + "Datos: <input type=\"text\" name=\"elementos\">\n"
                 + "<br />\n"
