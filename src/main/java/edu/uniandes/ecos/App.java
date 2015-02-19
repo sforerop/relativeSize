@@ -79,6 +79,10 @@ public class App
         for (String dato : datos) {
             listaDatos.add(Double.parseDouble(dato));
         } 
+        calcularPromedio();
+        calcularVariance();
+        caluclarDesviacionEstandar();
+        calcularMidPoints();
         
 //       listaDatos.add(6.0);
 //       listaDatos.add(6.0);
